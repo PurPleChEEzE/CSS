@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box-size{
+            width: 200px;
+            height: 200px;
+            margin-left: 100px;
+            margin-top:100px;
+        }
+        .box{
+            
+            background-color: aquamarine;
+            animation-name: grow;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            display: inline-block;
+        }
+
+        .box-2{
+            
+            background-color: aqua;
+            animation-name: key;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            animation-play-state: running;
+            display: inline-block;
+        }
+        .box-2:active{
+            animation-play-state: paused;
+        }
+
+        .box-3{
+            background-color: brown;
+            animation-duration: 3s;
+            animation-name: key-3;
+            animation-iteration-count: infinite;
+        }
+
+        .box-4{
+            background-color: coral;
+            background-color: brown;
+            animation-duration: 3s;
+            animation-name: key-4;
+            animation-iteration-count: infinite;
+        }
+
+        .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: black;
+            display: inline-block;
+        }
+
+        @keyframes grow{
+            0% {
+                transform: scale(1);
+                background-color : aquamarine;
+                opacity: 1;
+            }
+            50%{
+                transform: scale(1.5);
+                background-color: blueviolet;
+                opacity: 0.3;
+            }
+            100%{
+                transform: scale(1);
+                background-color: lightseagreen;
+                opacity: 1;
+            }
+        }
+
+        @keyframes key{
+            0%{
+                transform: translateX(0);
+                opacity: 1;
+                background-color: aqua;
+            }
+            25%{
+                transform: translate(200px, 0px);
+                opacity: 0.5;
+                background-color: blue;
+            }
+            50%{
+                transform: translate(200px, 200px);
+                opacity: 0.5;
+                background-color: blue;
+            }
+            75%{
+                transform: translate(0px, 200px);
+                opacity: 0.5;
+                background-color: blue;
+            }
+            100%{
+                transform: translateX(0);
+                opacity: 1;
+                background-color: aqua;
+            }
+        }
+        
+        @keyframes key-3{
+            0%{
+                transform: rotate(45deg);
+                opacity: 1;
+                background-color: aqua;
+            }
+            25%{
+                transform: scale(1.2);
+                opacity: 0.5;
+                background-color: blue;
+            }
+            50%{
+                transform: scale(1.5);
+                opacity: 0.5;
+                background-color: blue;
+            }
+            100%{
+                transform: scale(2);
+                opacity: 1;
+                background-color: aqua;
+            }
+        }
+
+        @keyframes key-4{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box-size box"></div>
+
+    <div class="box-size box-2"></div>
+
+    
+    <p>animation-name : 적용할 애니메이션 이름</p>
+    <p>animation-duration : 애니메이션 완료까지 걸리는 시간</p>
+    <p>animation-iteration-count : 애니메이션 반복 횟수</p>
+    <p>animation-delay : 애니메이션 시작 전 대기시간</p>
+    <p>animation-play-state : 재생 상태 결정</p>
+    <p>animation-timing-function : 시간에 따른 변화 속도 결정</p>
+    <div class="box-size box-3"></div>
+
+    <div class="box-size box-4"></div>
+
+
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</body>
+</html>

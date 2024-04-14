@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <h1>나의 흠페이지</h1>
+        <div class="member-join">
+            <a href="login.html">로그인</a>
+            <a href="">회원가입</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="main.html">홈</a></li>
+            <li><a href="">소개</a></li>
+            <li><a href="">포트폴리오</a></li>
+            <li><a href="">게시판</a></li>
+            <li><a href="contact.html">연락하기</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="content-main">
+            <h2>회원가입</h2>
+        
+            <form action="register" method="post">
+              <label for="username">사용자 이름:</label>
+              <br>
+              <input type="text" id="username" name="username" required>
+              <br>    
+              <label for="email">이메일:</label>
+              <br>    
+              <input type="email" id="email" name="email" required>
+              <br>          
+              <label for="password">비밀번호:</label>
+              <br>          
+              <input type="password" id="password" name="password" required>
+              <br>          
+              <label for="confirm_password">비밀번호 확인:</label>
+              <br>          
+              <input type="password" id="confirm_password" name="confirm_password" required>
+              <br>  
+              <button type="submit">가입하기</button>
+            </form>
+            </div>
+          </div>
+    </main>
+    <footer>
+        저희 홈페이지에 방문해 주셔서 감사합니다.
+    </footer>
+</body>
+</html>

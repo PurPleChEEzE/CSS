@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        button{
+            margin: 10px;
+            margin-left: 0px;
+        }
+        input{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        
+        <label for="userid">ID:</label>
+        <br>
+        <input maxlength="12" type="email" id="userid" name="userid" required>
+        <br>
+        <label for="password">비밀번호:</label>
+        <br>          
+        <input minlength="6" maxlength="12" type="password" id="password" name="password" required>
+        <br>          
+        <label for="password-check">비밀번호 확인:</label>
+        <br>
+        <input minlength="6" maxlength="12" type="password" id="password-check" name="password-check" required>
+        <br>
+        <label for="username">이름</label>
+        <br>
+        <input type="text" id="username" name="username">
+        <br>
+        <label for="phonenumber">휴대폰번호</label>
+        <br>
+        <input type="tel" id="phonenumber" name="phonenumber">
+        <br>
+
+        <button type="submit">가입</button>
+        
+    </form>
+</body>
+</html>

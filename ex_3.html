@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .display-h3{
+            display: inline; /* 인라인 레벨 요소 변경*/
+            margin-top: 0px;
+            margin-bottom: 0px;
+
+        }
+        .display-a, .display-strong{
+            display: block;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+            padding: 20px;
+            border: 2px solid red;
+            margin: 10px;
+            overflow: auto;
+        }
+        .border-box{
+            border-style: dotted;
+            border-width: 3px;
+            border-color: blue green;
+        }
+        table{
+            width: 500px;
+            border: 1px solid black;
+            text-align: center;
+            background-color:aquamarine;
+        }
+        thead td{
+            border: 1px solid blue;
+            background-color: chartreuse;
+        }
+        tbody td{
+            border: 1px solid blue;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <!-- 블록 레벨 요소 사용 -->
+    
+    <h3 class="display-h3"> h3 태그  </h3>
+    <h3 class="display-h3"> h3 태그</h3>
+    <hr>
+
+    <!-- 인라인 레벨 요소-->
+    <a href="https://google.com" class="display-h3"> 구글로 이동</a>
+    <strong> 문자를 굵게</strong>
+    
+
+    <div class="box">
+        boxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    </div>
+
+    <hr>
+    <div class="border-box">
+        box
+    </div>
+
+    <table>
+        <thead>
+            <td> 글번호</td>
+            <td> 제목</td>
+            <td> 작성자</td>
+            <td> 작성일</td>
+            <td> 조회수</td>
+        </thead>
+        <tbody>
+            <td>5</td>
+            <td>제목5</td>
+            <td>홍길동</td>
+            <td>2024-04-05</td>
+            <td>157</td>
+        </tbody>
+        <tbody>
+            <td>4</td>
+            <td>제목4</td>
+            <td>홍길동</td>
+            <td>2024-04-05</td>
+            <td>157</td>
+        </tbody>
+        <tbody>
+            <td>3</td>
+            <td>제목3</td>
+            <td>홍길동</td>
+            <td>2024-04-05</td>
+            <td>157</td>
+        </tbody>
+        <tbody>
+            <td>2</td>
+            <td>제목2</td>
+            <td>홍길동</td>
+            <td>2024-04-05</td>
+            <td>157</td>
+        </tbody>
+        <tbody>
+            <td>1</td>
+            <td>제목1</td>
+            <td>홍길동</td>
+            <td>2024-04-05</td>
+            <td>157</td>
+        </tbody>
+    </table>
+</body>
+</html>

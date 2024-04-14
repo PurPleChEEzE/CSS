@@ -1,0 +1,162 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+footer{
+    background-color: #f2f2f2;
+    width: 1200px;
+}
+
+ul{
+    
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(116, 116, 116, 0.2);
+    
+}
+
+menu > ul > li{
+    display: inline-block;
+    position: relative;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -1px;
+    color: #5e636d;
+}
+
+ul > li > a{
+    text-decoration: none;
+    color: #5e636d;
+
+}
+
+ul > li > a:hover{
+    text-decoration: underline;
+}
+
+select{
+    float:right
+}
+
+ul > li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 12px;
+    margin-top: -6px;
+    background-color: #dadde1
+}
+
+span{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #5e636d;
+    display: block;
+}
+.company{
+    padding-top: 13px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid rgba(116, 116, 116, 0.2);
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: -0.5px;
+    color: #757c8a;
+}
+.company-info{
+    
+    float: left;
+}
+image{
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+.info-box{
+    
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: -0.5px;
+    color: #757c8a;
+    display: inline-block;
+    background: url();
+    background-size: 400px auto;
+    text-decoration: none;
+}
+
+.info-box-2{
+    
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: -0.5px;
+    color: #757c8a;
+    display: inline-block;
+    background: url();
+    background-size: 400px auto;
+    text-decoration: none;
+}
+
+
+.cscenter-info{
+    position: relative;
+    display: inline-block;
+    padding-right: 19px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #5e636d;
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: 1px solid rgba(116, 116, 116, 0.2);
+    color: #757c8a;
+}
+
+
+.cscenter-info::after{
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    margin-top: -3px;
+    background-position: -358px -112px;
+    vertical-align: middle;
+}
+
+div{
+    background-color: #f2f2f2;
+}
+
+.legal-info{
+    padding-top: 9px;
+    padding-top: 18px;
+    color: #757c8a;
+}
+.legal-list-info{
+    width: auto;
+    font-size: 0;
+}
+.legal-item-info{
+    display: inline-block;
+    margin-right: 30px;
+    padding-top: 7px;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    vertical-align: top;
+    
+}
+
+
+
+.legal-item-info > a:hover{
+    text-decoration: none;
+}

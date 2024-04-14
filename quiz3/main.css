@@ -1,0 +1,129 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+header{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.member-join{
+    float: right;
+}
+
+.member-join > a{
+    margin-right: 15px;
+}
+
+.member-join > a:hover{
+    text-decoration: underline;
+}
+
+nav{
+    background-color: #555;
+    color: #fff;
+
+}
+
+nav > ul{
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+
+}
+
+nav > ul > li{
+    display: inline-block;
+    margin-right: 15px;
+    
+    
+}
+
+nav > ul > li:hover{
+    text-decoration: underline;
+}
+
+nav > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: auto;
+}
+.container{
+    position: relative;
+    width: auto;
+    height: 400px;
+    margin: 30px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.content-main{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container-register{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 30px;
+    padding: 20px;
+
+}
+.content-main > label{
+    display: block;
+    margin: 5px;
+}
+
+.content-main > input{
+    width: auto;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.board-main-menu:hover > .board-sub-menu{
+    display: block;
+    position: absolute;
+    background-color: #555;
+    padding: 10px;
+    z-index: 1;
+}
+
+.board-sub-menu{
+    display: none;
+}
+.board-sub-menu > a {
+    display: block;
+    padding-top: 3px;
+}
+
+.board-sub-menu > a:hover{
+    text-decoration: underline;
+}
+
+.menu-textcolor{
+    color: white;
+    text-decoration: none;
+}
