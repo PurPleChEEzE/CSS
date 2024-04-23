@@ -92,16 +92,34 @@
             <h2>wave 로그인</h2>
             <form action="" method="post">
                 <label for="id"></label>
-                <input class="input-box" type="text" placeholder="아이디" title="아이디" required>
+                <input class="input-box" type="text" id="id" placeholder="아이디" title="아이디" required>
                 <br><label for="password"></label>
-                <input class="input-box" type="text" placeholder="비밀번호" title="비밀번호" required>
+                <input class="input-box" type="text" id="password" placeholder="비밀번호" title="비밀번호" required>
                 <br><label for="remember-check">
                     <input type="checkbox" class="remember-check">아이디 저장하기
                 <label for="remember-check">
                         <input type="checkbox" class="remember-check">자동로그인
                 </label>
-                <br><button class="button-box" type="submit">wave 로그인</button>
+                <br><button class="button-box" type="submit" onclick="loginAction()">wave 로그인</button>
             </form>
+
+            <script>
+                const id = "user";
+                const pwd = "qwer1234";
+
+                function loginAction(){
+                    const inputId = document.getElementById("id").value;
+                    const inputPass = document.getElementById("password").value;
+                    if(inputId =="" || inputPass == ""){
+                        alert("아이디 또는 비밀번호를 입력해주세요");
+                    }else if(inputId != id || inputPass != pwd){
+                        alert("아이디 또는 비밀번호가 틀렸습니다.");
+                    }else if(inputId ==id && inputPass == pwd){
+                        alert("로그인되었습니다.");
+                    }
+                }
+
+            </script>
         </div>
 
     </main>
